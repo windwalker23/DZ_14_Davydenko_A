@@ -1,0 +1,77 @@
+.header {
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.header__logo-link {
+    display: block;
+    width: 130px;
+}
+
+.header__right-side {
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.header__contacts{
+    justify-content: space-between;
+    align-items: center;
+    width: 478px;
+}
+
+.lang {
+    border-radius: 8px;
+    width: 33px;
+    height: 25px;
+    border: none;
+    background: none;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: #fff;
+    cursor: pointer;
+
+    &:hover {
+        background: rgba(255, 255, 255, 0.2);
+    }
+
+    &.lang-active {
+        background: $accent; 
+    }
+}
+
+.header-address {
+    @include Link(#fff)
+}
+
+.header-tel {
+    @include H4(#fff);
+}
+
+.fb-link {
+    display: block;
+    width: 24px;
+}
+
+.fb-logo-header {
+    @include fb-logo(#fff)
+}
+
+.header__nav_ul {
+    width: 416px;
+    margin-top: 15px;
+    justify-content: space-between;
+}
+
+.header__nav-link {
+    @include H4(#fff);
+    &:hover {
+        text-decoration: underline solid 2px;
+        text-underline-offset: 6px;
+    }
+}
+
+.dot-separator {
+    width: 6px;
+}

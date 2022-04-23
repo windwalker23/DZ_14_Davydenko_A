@@ -1,0 +1,72 @@
+.clients__title {
+    @include H3-caps($main-regular);
+    text-align: center;
+}
+
+.clients__cards {
+    max-width: 1720px;
+    border-radius: 12px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    overflow: hidden;
+}
+
+.clients__cards a {
+    // display: block;
+    height: 120px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 430px;
+}
+
+.card-hillel {
+    background-color: #1C4280;
+}
+
+.card-wannabiz {
+    background-color: #143646;
+}
+
+.card-tapgerine {
+    background-color: #F48B30;
+}
+
+.card-3dlook {
+    background-color: #9E4DC3;
+}
+
+.card-orangear {
+    background-color: #F48B30;
+}
+
+.card-adtelligent {
+    background-color: #E2E2E4;
+}
+
+.card-clickky {
+    background-color: #C71C36;
+}
+
+.card-eco {
+    background-color: #DCF3F9;
+}
+
+.card-ingratek {
+    background-color: #EAEAEA;
+}
+
+.card-city-par {
+    background-color: #282240;
+}
+
+.card-artprint {
+    background-color: #1D4568;
+}
+
+.card-ultimatecard {
+    background-color: #000;
+}

@@ -1,0 +1,36 @@
+$gradient-supersoft: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+
+$gradient-redText: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+
+$main-regular: #323264;
+
+$main-alt: #46466E;
+
+$grey-text: #B3B3BA;
+
+$grey-bg: #F5F5FA;
+
+$grey-separator: #E6E6F0;
+
+$accent: #F0145A;
+
+$active-regular: #24A3FF;
+
+$active-hover: #0085FF;
+
+$active-active: #006CCF;
+
+.flex {
+    display: flex;
+}
+
+.max-width {
+    max-width: 1630px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Montserrat';
+}

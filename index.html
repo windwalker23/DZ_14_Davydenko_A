@@ -4,9 +4,344 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles/CSS/reset.css">
+    <link rel="stylesheet" href="styles/CSS/style.css">
+    <title>hlegal</title>
 </head>
 <body>
-    
+    <section class="main-content">
+        <div class="splash max-width">
+            <header class="header flex">
+                <div class="header__logo">
+                    <a href="index.html" class="header__logo-link">
+                        <img src="images/Logo.svg" alt="logo" class="header__logo-img">
+                    </a>
+                </div>
+                <div class="header__right-side flex">
+                    <div class="header__contacts flex">
+                        <button class="lang">УК</button>
+                        <button class="lang">РУ</button>
+                        <button class="lang lang-active">EN</button>
+                        <img src="images/icons/Dot_separator.svg" alt="dot" class="dot-separator">
+                        <p class="header-address">Kyiv, Mechnikova str, 14/1</p>
+                        <img src="images/icons/Dot_separator.svg" alt="dot" class="dot-separator">
+                        <a href="tel:+0800211927" class="header-tel">0800 211 927</a>
+                        <img src="images/icons/Dot_separator.svg" alt="dot" class="dot-separator">
+                        <a href="https://www.facebook.com/" class="fb-link" target="blank">
+                            <svg class="fb-logo-header" width="24" height="25" viewBox="0 0 24 25" 
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_34498_2871)">
+                                <path d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 
+                                0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 
+                                11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 
+                                8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 
+                                23.5943 24 18.5995 24 12.5733Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_34498_2871">
+                                <rect width="24" height="24" fill="white" transform="translate(0 0.5)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                    <nav class="header__nav">
+                        <ul class="header__nav_ul flex">
+                            <li class="header__nav-item">
+                                <a href="" class="header__nav-link">about us</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="" class="header__nav-link">services</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="" class="header__nav-link">team</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="" class="header__nav-link">publications</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="" class="header__nav-link">contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <p class="splash__text">you legal solutions provider</p>
+            <svg class="scroll" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle opacity="0.5" cx="21" cy="21" r="20" stroke="white" stroke-width="2"/>
+                <path d="M12 18L21 27L30 18" stroke="white" stroke-width="2"/>
+            </svg>
+        </div>
+        <div class="experience flex max-width">
+            <ul class="experience__list flex">
+                <li><a href="" class="experience__link experience-active">Consistent</a></li>
+                <li><a href="" class="experience__link">Customer oriented</a></li>
+                <li><a href="" class="experience__link">Innovative</a></li>
+                <li><a href="" class="experience__link">Business oriented</a></li>
+            </ul>
+            <img src="images/vertical-line.svg" class="experience__vert-line">
+            <div class="experience__content">
+                <h2 class="experience__title">We turn the idea of legal services</h2>
+                <p class="experience__text">
+                    Consolidating many years of experience and practice, the company's 
+                    lawyers accompany complex projects and achieve a number of important 
+                    decisions for the industry. Many of them form the practice of applying 
+                    the law of the sea in Ukraine.
+                </p>
+            </div>
+        </div>
+        <div class="services">
+            <div class="max-width">
+                <a href="http://" class="services__link" >Services 
+                    <svg class="arrow" width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.5 1L6 5.5L1.5 10" stroke="#24A3FF" stroke-width="2"/>
+                    </svg>
+                </a>
+                <p class="services__title">What can we do better than others?</p>
+                <div class="services__cards flex">
+                    <div class="service-card">
+                        <img src="images/icons/Icon1.svg" alt="icon" class="service-card__icon">
+                        <a href="" class="service-card__link">IT and e-commerce</a>
+                        <p class="service-card__text">
+                            An endless stream of contracts, tax issues, labor relations, 
+                            corporate papers - legal work distracts you from doing business. 
+                            But there is not much work to do to hire an in-house lawyer.
+                        </p>
+                    </div>
+                    <div class="service-card">
+                        <img src="images/icons/Icon2.svg" alt="icon" class="service-card__icon">
+                        <a href="" class="service-card__link">Comprehensive daily legal support</a>
+                        <p class="service-card__text">
+                            In addition, over time, the work will become the same type and 
+                            uninteresting for a full-time lawyer. And we know very well how 
+                            difficult it is to find a good candidate with experience in the 
+                            field of information technology in Ukraine.
+                        </p>
+                    </div>
+                    <div class="service-card">
+                        <img src="images/icons/Icon3.svg" alt="icon" class="service-card__icon">
+                        <a href="" class="service-card__link">Structuring corporate relationships</a>
+                        <p class="service-card__text">Instead of just providing legal services, we will 
+                            hire a lawyer or a whole team that will fit into the daily life of 
+                            your company.
+                        </p>
+                    </div>
+                    <div class="service-card">
+                        <img src="images/icons/Icon4.svg" alt="icon" class="service-card__icon">
+                        <a href="" class="service-card__link">Building contractual relations</a>
+                        <p class="service-card__text">
+                            Once a week, or week after month, you have your own lawyer by your side. 
+                            Anyone in the company can catch it at the coffee maker and just talk 
+                            about current affairs instead of waiting for update status.
+                        </p>
+                    </div>
+                    <div class="service-card">
+                        <img src="images/icons/Icon5.svg" alt="icon" class="service-card__icon">
+                        <a href="" class="service-card__link">Protection of business, intellectual property</a>
+                        <p class="service-card__text">
+                            And all the other time he will work on new diverse projects, so he will 
+                            definitely not stop in professional development. One way or another, 
+                            all Axon Partners will work for you instead of a corporate lawyer.
+                        </p>
+                    </div>
+                    <div class="service-card">
+                        <img src="images/icons/Icon6.svg" alt="icon" class="service-card__icon">
+                        <a href="" class="service-card__link">Judicial representation</a>
+                        <p class="service-card__text">
+                            Is it a small, medium-sized company or a market leader? Local business 
+                            or multinational company? Do you have your own legal department or not?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="team">
+        <div class="max-width">
+            <div class="team-card flex">
+                <img src="images/Team-1.jpg" alt="photo" class="team-card__photo">
+                <div class="team-card__info">
+                    <a href="" class="team-card__link">команда
+                        <svg class="arrow" width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.5 1L6 5.5L1.5 10" stroke="#24A3FF" stroke-width="2"/>
+                        </svg>
+                    </a>
+                    <p class="team-card__title">
+                        Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, 
+                        вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.
+                    </p>
+                    <p class="team-card__name">Олександр Олександровський</p>
+                    <p class="team-card__post">Керуючий партнер</p>
+                </div>
+            </div>
+            <div class="team-pointers flex">
+                <svg class="team-pointers__pointer pointer-active" width="16" height="16" 
+                viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle opacity="0.2" cx="8" cy="8" r="8" fill="#24A3FF"/>
+                </svg>
+                <svg class="team-pointers__pointer" width="16" height="16" 
+                viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle opacity="0.2" cx="8" cy="8" r="8" fill="#24A3FF"/>
+                </svg>
+                <svg class="team-pointers__pointer" width="16" height="16" 
+                viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle opacity="0.2" cx="8" cy="8" r="8" fill="#24A3FF"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+    <article class="clients">
+        <h3 class="clients__title">They already trust us</h3>
+        <div class="clients__cards flex">
+            <div class="client-card">
+                <a href="" class="card-hillel">
+                    <img src="images/clients/hillel.svg" alt="hillel" class="client-card__img">
+                </a>
+            </div>
+            <div class="client-card">
+                <a href="" class="card-wannabiz">
+                    <img src="images/clients/wannabiz.svg" alt="wannabiz" class="client-card__img">
+                </a>
+            </div>
+            <div class="client-card">
+                <a href="" class="card-tapgerine">
+                    <img src="images/clients/tapgerine.svg" alt="tapgerine" class="client-card__img">
+                </a>
+            </div>
+            <div class="client-card">
+                <a href="" class="card-3dlook">
+                    <img src="images/clients/3dlook.svg" alt="3dlook" class="client-card__img">
+                </a></div>
+            <div class="client-card">
+                <a href="" class="card-orangear">
+                    <img src="images/clients/orangear.svg" alt="orangear" class="client-card__img">
+                </a>
+            </div>
+            <div class="client-card">
+                <a href="" class="card-adtelligent">
+                    <img src="images/clients/adtelligent.svg" alt="adtelligent" class="client-card__img">
+                </a>
+            </div>
+            <div class="client-card">
+                <a href="" class="card-clickky">
+                    <img src="images/clients/clickky.svg" alt="clickky" class="client-card__img">
+                </a>
+            </div>
+            <div class="client-card">
+                <a href="" class="card-eco">
+                    <img src="images/clients/eco-leasing.svg" alt="eco" class="client-card__img">
+                </a>
+            </div>
+            <div class="client-card">
+                <a href="" class="card-ingratek">
+                    <img src="images/clients/ingratek.svg" alt="ingratek" class="client-card__img">
+                </a>
+            </div>
+            <div class="client-card">
+                <a href="" class="card-city-par">
+                    <img src="images/clients/city-par.svg" alt="city-par" class="client-card__img">
+                </a>
+            </div>
+            <div class="client-card">
+                <a href="" class="card-artprint">
+                    <img src="images/clients/artprint.svg" alt="artprint" class="client-card__img">
+                </a>
+            </div>
+            <div class="client-card">
+                <a href="" class="card-ultimatecard">
+                    <img src="images/clients/ultimatecard.svg" alt="ultimatecard" class="client-card__img">
+                </a>
+            </div>
+        </div>
+    </article>
+    <article class="recommended">
+        <div class="max-width">
+            <a href="" class="recommended__link">Publications
+                <svg class="arrow" width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.5 1L6 5.5L1.5 10" stroke="#24A3FF" stroke-width="2"/>
+                </svg>
+            </a>
+            <p class="recommended__title">We have something to tell</p>
+            <div class="recommended__cards flex">
+                <div class="recommended-card flex">
+                    <img src="images/Publication-1.jpg" alt="img" class="recommended-card__img">
+                    <div class="recommended-card-info">
+                        <a href="" class="recommended-card__link">Equity associate</a>
+                        <p class="recommended-card__date">April 22</p>
+                        <hr class="recommended-card__line">
+                        <p class="recommended-card__text">
+                            I'm a jun on projects. I am a co-owner of a law firm. How it happened. 
+                            Before entering my parents told me that if I…
+                        </p>
+                    </div>
+                </div>
+                <div class="recommended-card flex">
+                    <img src="images/Publication-2.jpg" alt="img" class="recommended-card__img">
+                    <div class="recommended-card-info">
+                        <a href="" class="recommended-card__link">
+                            Penalty for the Good Corporation: what will happen to Google and others 
+                            for violating the GDPR
+                        </a>
+                        <p class="recommended-card__date">September 29</p>
+                        <hr class="recommended-card__line">
+                        <p class="recommended-card__text">
+                            And why the recovery of 50 million euros could be a fateful precedent 
+                            According to Mind.ua January 21 National Commission for Data Protection.
+                        </p>
+                    </div>
+                </div>
+                <div class="recommended-card flex">
+                    <img src="images/Publication-3.jpg" alt="img" class="recommended-card__img">
+                    <div class="recommended-card-info">
+                        <a href="" class="recommended-card__link">Millennial Testament</a>
+                        <p class="recommended-card__date">August 19</p>
+                        <hr class="recommended-card__line">
+                        <p class="recommended-card__text">
+                            What and how modern vloggers, opinion leaders and crypto-millionaires will 
+                            inherit A typical legacy of the Ukrainian generation X looks like this: an 
+                            apartment in…
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <footer class="footer">
+        <div class="max-width">
+            <hr class="footer__line">
+            <div class="footer-content">
+                <div class="footer-content__address flex">
+                <p class="footer-address">Kyiv, Mechnikova str, 14/1</p>
+                <img src="images/icons/Dot_separator_grey.svg" alt="dot" class="dot-footer">
+                <a href="https://goo.gl/maps/HqJqgipNbbEoMEjj6" class="footer-map" target="blank">On map</a>
+                <p class="copyrights">© 2021 HLEGAL Law company, LLC</p>
+                </div>
+                <div class="footer-content__contacts flex">
+                    <a href="https://www.facebook.com/" class="fb-link" target="blank">
+                        <svg class="fb-logo-footer" width="24" height="25" viewBox="0 0 24 25" 
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_34498_2871)">
+                            <path d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 
+                            0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 
+                            11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 
+                            8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 
+                            23.5943 24 18.5995 24 12.5733Z" fill="white"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_34498_2871">
+                            <rect width="24" height="24" fill="white" transform="translate(0 0.5)"/>
+                            </clipPath>
+                        </defs>
+                        </svg>
+                    </a>
+                    <img src="images/icons/Dot_separator_grey.svg" alt="dot" class="dot-footer">
+                    <a href="tel:+0800211927" class="footer-tel">0800 211 927</a>
+                    <img src="images/icons/Dot_separator_grey.svg" alt="dot" class="dot-footer">
+                    <a class="footer-mail" href="mailto:">contact@forstudy.space</a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
 </body>
 </html>
