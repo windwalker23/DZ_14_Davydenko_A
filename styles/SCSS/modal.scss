@@ -1,0 +1,155 @@
+.modal-container {
+    position: fixed;
+    background-color: #323264f1;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    display: none;
+    z-index: 1000;
+    overflow: scroll;
+}
+
+.active-modal {
+    display: flex;
+}
+
+.modal {
+    overflow: auto;
+    margin: auto;
+    padding: 30px;
+    width: 650px;
+    position: relative;
+    background: #F5F5FA;
+    box-shadow: 0px 15px 80px rgba(40, 40, 86, 0.5);
+    border-radius: 12px;
+}
+
+.modal__title {
+    @include Hero;
+    margin-bottom: 30px;
+}
+
+.modal__close {
+    position: absolute;
+    right: 3%;
+    top: 3%;
+    cursor: pointer;
+}
+
+.modal__question {
+    @include H3-caps($grey-text);
+    margin-bottom: 15px;
+}
+
+.modal__input {
+    @include Paragraph($grey-text);
+    border: 1px solid #FFFFFF;
+    border-radius: 8px;
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 15px;
+
+    &:nth-of-type(3) {
+        margin-bottom: 30px;
+    }
+}
+
+.modal__textarea {
+    @include Paragraph($grey-text);
+    border: 1px solid #FFFFFF;
+    border-radius: 8px;
+    padding: 15px;
+    width: 100%;
+    height: 130px;
+    margin-bottom: 30px;
+    resize: none;
+}
+
+.modal__button {
+    background: $active-regular;
+    box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+    border-radius: 12px;
+    width: 100%;
+    height: 56px;
+    @include H4(#fff);
+    cursor: pointer;
+}
+
+#contact, #contact-mob {
+    cursor: pointer;
+}
+
+@media (max-width: 680px) {
+    .modal {
+        border-radius: 0;
+        margin: 0;
+        width: 100%;
+    }
+}
+
+
+// Navigation
+
+
+.nav-mob-container {
+    background-color: $main-regular;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 15px;
+    justify-content: center;
+    transition: .25s ease-in-out;
+    left: -100%;
+    top: 100%;
+    z-index: -5;
+}
+
+.nav-mob-container-open {
+    transform: translate(100%, -100%);
+    z-index: 998;
+}
+
+.nav-mob-open {
+    margin-top: 60px;
+    height: 280px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 12px;
+    padding:30px 15px;
+}
+
+.nav-mob__list {
+    flex-direction: column;
+    align-items: center;
+
+    & li {
+        width: 100%;
+    }
+}
+
+.nav-mob__link {
+    display: block;
+    background: #F5F5FA;
+    border-radius: 12px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: $active-regular;
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+
+    &:active {
+        background: #E6E6F0;
+    }
+
+    &.active-nav-link {
+        color: $accent;
+    }
+}
+
+.no-overflow {
+    overflow: hidden;
+}

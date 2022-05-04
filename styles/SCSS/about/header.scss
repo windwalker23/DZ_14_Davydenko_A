@@ -36,24 +36,25 @@
     font-weight: 700;
     font-size: 12px;
     line-height: 15px;
-    color: #fff;
+    color: $grey-text;
     cursor: pointer;
 
     &:hover {
-        background: rgba(255, 255, 255, 0.2);
+        background: $grey-bg;
     }
 
     &.lang-active {
-        background: $accent; 
+        background: $accent;
+        color: #fff 
     }
 }
 
 .header-address {
-    @include Link(#fff)
+    @include Link($grey-text)
 }
 
 .header-tel {
-    @include H4(#fff);
+    @include H4($grey-text);
 }
 
 .fb-link {
@@ -62,7 +63,7 @@
 }
 
 .fb-logo-header {
-    @include fb-logo(#fff)
+    @include fb-logo($grey-text)
 }
 
 .header__nav_ul {
@@ -72,8 +73,15 @@
 }
 
 .header__nav-link {
-    @include H4(#fff);
+    @include H4($active-regular);
+
     &:hover {
+        text-decoration: underline solid 2px;
+        text-underline-offset: 6px;
+    }
+
+    &.active-nav-link {
+        color: $accent;
         text-decoration: underline solid 2px;
         text-underline-offset: 6px;
     }

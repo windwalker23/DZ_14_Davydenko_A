@@ -14,13 +14,17 @@
 }
 
 .clients__cards a {
-    // display: block;
+    display: block;
     height: 120px;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 430px;
+    min-width: 256px;
+}
+
+.client-card {
+    width: 25%;
 }
 
 .card-hillel {

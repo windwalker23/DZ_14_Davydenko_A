@@ -1,0 +1,127 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../../fonts/Montserrat-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../../fonts/Montserrat-Bold.ttf");
+    font-weight: 700;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@import "../mixins.scss";
+@import "../variables.scss";
+@import "../about/header.scss";
+@import "../about/footer.scss";
+
+.main {
+    background-color: $grey-bg;
+    padding: 30px 0;
+    margin-top: 60px;
+
+    & > .max-width {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+.publications {
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.segment {
+    background-color: $grey-separator;
+    border-radius: 12px;
+    width: 233px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+}
+
+.segment__button {
+    height: 38px;
+    width: 112px;
+    @include H4($main-regular);
+    border: none;
+    background: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+    &:hover {
+        background: $grey-bg;
+    }
+
+    &.segment-active {
+        background-color: #fff;
+    }
+}
+
+.publication-card {
+    flex-direction: column;
+    margin-top: 30px;
+    width: 513px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    cursor: pointer;
+
+    &:hover .publication-card__link {
+        color: $accent;
+    }
+}
+
+.publication-card__img {
+    display: block;
+    object-fit: cover;
+    height: 200px;
+}
+
+.publication-card-info {
+    padding: 30px;
+}
+
+.publication-card__link {
+    @include H4($active-regular);
+}
+
+.publication-card__date {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 15px 0;
+    color: $grey-text;
+}
+
+.publication-card__line {
+    @include line(4px, $grey-separator);
+    margin-bottom: 15px;
+}
+
+.publication-card__text {
+    @include Paragraph-small(#000);
+}
+
+.publications-button {
+    @include H4(#fff);
+    box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+    border-radius: 12px;
+    background: $active-regular;
+    width: 211px;
+    height: 56px;
+    border: none;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+@import "../modal.scss";
+@import "publications-adaptation";

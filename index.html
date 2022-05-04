@@ -8,69 +8,98 @@
     <link rel="stylesheet" href="styles/CSS/style.css">
     <title>hlegal</title>
 </head>
-<body>
+<body id="body">
     <section class="main-content">
-        <div class="splash max-width">
-            <header class="header flex">
-                <div class="header__logo">
-                    <a href="index.html" class="header__logo-link">
-                        <img src="images/Logo.svg" alt="logo" class="header__logo-img">
-                    </a>
-                </div>
-                <div class="header__right-side flex">
-                    <div class="header__contacts flex">
+        <div class="splash">
+            <div class="header-mob">
+                <div class="top-bar flex">
+                    <div class="buttons-mob">
                         <button class="lang">УК</button>
                         <button class="lang">РУ</button>
                         <button class="lang lang-active">EN</button>
-                        <img src="images/icons/Dot_separator.svg" alt="dot" class="dot-separator">
-                        <p class="header-address">Kyiv, Mechnikova str, 14/1</p>
-                        <img src="images/icons/Dot_separator.svg" alt="dot" class="dot-separator">
-                        <a href="tel:+0800211927" class="header-tel">0800 211 927</a>
-                        <img src="images/icons/Dot_separator.svg" alt="dot" class="dot-separator">
-                        <a href="https://www.facebook.com/" class="fb-link" target="blank">
-                            <svg class="fb-logo-header" width="24" height="25" viewBox="0 0 24 25" 
-                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_34498_2871)">
-                                <path d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 
-                                0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 
-                                11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 
-                                8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 
-                                23.5943 24 18.5995 24 12.5733Z" fill="white"/>
-                                </g>
-                                <defs>
-                                <clipPath id="clip0_34498_2871">
-                                <rect width="24" height="24" fill="white" transform="translate(0 0.5)"/>
-                                </clipPath>
-                                </defs>
-                            </svg>
+                    </div>
+                    <a href="tel:+0800211927" class="header-tel">0800 211 927</a>
+                </div>
+                <div class="nav-mob flex">
+                    <div class="header__logo-mob">
+                        <a href="index.html" class="header__logo-link">
+                            <img src="images/Logo.svg" alt="logo" class="header__logo-img">
                         </a>
                     </div>
-                    <nav class="header__nav">
-                        <ul class="header__nav_ul flex">
-                            <li class="header__nav-item">
-                                <a href="" class="header__nav-link">about us</a>
-                            </li>
-                            <li class="header__nav-item">
-                                <a href="" class="header__nav-link">services</a>
-                            </li>
-                            <li class="header__nav-item">
-                                <a href="" class="header__nav-link">team</a>
-                            </li>
-                            <li class="header__nav-item">
-                                <a href="" class="header__nav-link">publications</a>
-                            </li>
-                            <li class="header__nav-item">
-                                <a href="" class="header__nav-link">contact</a>
-                            </li>
-                        </ul>
-                    </nav>
+                    <button class="nav__button-mob" id="nav__button-mob">
+                        <span></span>
+                    </button>
                 </div>
-            </header>
-            <p class="splash__text">you legal solutions provider</p>
-            <svg class="scroll" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle opacity="0.5" cx="21" cy="21" r="20" stroke="white" stroke-width="2"/>
-                <path d="M12 18L21 27L30 18" stroke="white" stroke-width="2"/>
-            </svg>
+            </div>
+            <div class="max-width">
+                <header class="header flex">
+                    <div class="header__logo">
+                        <a href="index.html" class="header__logo-link">
+                            <img src="images/Logo.svg" alt="logo" class="header__logo-img">
+                        </a>
+                    </div>
+                    <div class="header__right-side flex">
+                        <div class="header__contacts flex">
+                            <button class="lang">УК</button>
+                            <button class="lang">РУ</button>
+                            <button class="lang lang-active">EN</button>
+                            <img src="images/icons/Dot_separator.svg" alt="dot" class="dot-separator">
+                            <p class="header-address">Kyiv, Mechnikova str, 14/1</p>
+                            <img src="images/icons/Dot_separator.svg" alt="dot" class="dot-separator">
+                            <a href="tel:+0800211927" class="header-tel">0800 211 927</a>
+                            <img src="images/icons/Dot_separator.svg" alt="dot" class="dot-separator">
+                            <a href="https://www.facebook.com/" class="fb-link" target="blank">
+                                <svg class="fb-logo-header" width="24" height="25" viewBox="0 0 24 25" 
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_34498_2871)">
+                                    <path d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 
+                                    0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 
+                                    11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 
+                                    8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 
+                                    23.5943 24 18.5995 24 12.5733Z" fill="white"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_34498_2871">
+                                    <rect width="24" height="24" fill="white" transform="translate(0 0.5)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="header__logo-mob">
+                            <a href="index.html" class="header__logo-link">
+                                <img src="images/Logo.svg" alt="logo" class="header__logo-img">
+                            </a>
+                        </div>
+                        <nav class="header__nav">
+                            <ul class="header__nav_ul flex">
+                                <li class="header__nav-item">
+                                    <a href="pages/about.html" class="header__nav-link">about us</a>
+                                </li>
+                                <li class="header__nav-item">
+                                    <a href="" class="header__nav-link">services</a>
+                                </li>
+                                <li class="header__nav-item">
+                                    <a href="" class="header__nav-link">team</a>
+                                </li>
+                                <li class="header__nav-item">
+                                    <a href="pages/publications.html" class="header__nav-link">publications</a>
+                                </li>
+                                <li class="header__nav-item">
+                                    <a class="header__nav-link" id="contact">contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </header>
+                <span class="splash__text">you legal solutions provider</span>
+                <span class="scroll-item">
+                    <svg class="scroll" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle opacity="0.5" cx="21" cy="21" r="20" stroke="white" stroke-width="2"/>
+                        <path d="M12 18L21 27L30 18" stroke="white" stroke-width="2"/>
+                    </svg>
+                </span>
+            </div>
         </div>
         <div class="experience flex max-width">
             <ul class="experience__list flex">
@@ -80,6 +109,7 @@
                 <li><a href="" class="experience__link">Business oriented</a></li>
             </ul>
             <img src="images/vertical-line.svg" class="experience__vert-line">
+            <hr class="experience__line">
             <div class="experience__content">
                 <h2 class="experience__title">We turn the idea of legal services</h2>
                 <p class="experience__text">
@@ -211,7 +241,8 @@
             <div class="client-card">
                 <a href="" class="card-3dlook">
                     <img src="images/clients/3dlook.svg" alt="3dlook" class="client-card__img">
-                </a></div>
+                </a>
+            </div>
             <div class="client-card">
                 <a href="" class="card-orangear">
                     <img src="images/clients/orangear.svg" alt="orangear" class="client-card__img">
@@ -256,7 +287,7 @@
     </article>
     <article class="recommended">
         <div class="max-width">
-            <a href="" class="recommended__link">Publications
+            <a href="pages/publications.html" class="recommended__link">Publications
                 <svg class="arrow" width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1.5 1L6 5.5L1.5 10" stroke="#24A3FF" stroke-width="2"/>
                 </svg>
@@ -317,21 +348,13 @@
                 <p class="copyrights">© 2021 HLEGAL Law company, LLC</p>
                 </div>
                 <div class="footer-content__contacts flex">
-                    <a href="https://www.facebook.com/" class="fb-link" target="blank">
-                        <svg class="fb-logo-footer" width="24" height="25" viewBox="0 0 24 25" 
-                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_34498_2871)">
-                            <path d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 
-                            0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 
-                            11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 
-                            8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 
-                            23.5943 24 18.5995 24 12.5733Z" fill="white"/>
-                            </g>
-                            <defs>
-                            <clipPath id="clip0_34498_2871">
-                            <rect width="24" height="24" fill="white" transform="translate(0 0.5)"/>
-                            </clipPath>
-                        </defs>
+                    <a href="https://www.facebook.com/" class="fb-link-footer" target="blank">
+                        <svg class="fb-logo-footer" width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M38 19.1161C38 8.55857 29.4934 0 19 0C8.50658 0 0 8.55857 0 19.1161C0 
+                            28.6575 6.94803 36.5659 16.0312 38V24.6419H11.207V19.1161H16.0312V14.9046C16.0312 
+                            10.1136 18.8678 7.46723 23.2078 7.46723C25.2866 7.46723 27.4609 7.84059 27.4609 
+                            7.84059V12.545H25.0651C22.7048 12.545 21.9688 14.0185 21.9688 15.5302V19.1161H27.2383L26.3959 
+                            24.6419H21.9688V38C31.052 36.5659 38 28.6575 38 19.1161Z" fill="#24A3FF"/>
                         </svg>
                     </a>
                     <img src="images/icons/Dot_separator_grey.svg" alt="dot" class="dot-footer">
@@ -339,9 +362,49 @@
                     <img src="images/icons/Dot_separator_grey.svg" alt="dot" class="dot-footer">
                     <a class="footer-mail" href="mailto:">contact@forstudy.space</a>
                 </div>
+                <p class="copyrights-mob">© 2021 HLEGAL Law company, LLC</p>
             </div>
         </div>
         </div>
     </footer>
+    <div class="nav-mob-container flex" id="nav-mob">
+        <div class="nav-mob-open">
+            <ul class="nav-mob__list flex">
+                <li class="nav-mob__item">
+                    <a href="pages/about.html" class="nav-mob__link">about us</a>
+                </li>
+                <li class="nav-mob__item">
+                    <a href="" class="nav-mob__link">services</a>
+                </li>
+                <li class="nav-mob__item">
+                    <a href="" class="nav-mob__link">team</a>
+                </li>
+                <li class="nav-mob__item">
+                    <a href="pages/publications.html" class="nav-mob__link">publications</a>
+                </li>
+                <li class="nav-mob__item">
+                    <a class="nav-mob__link" id="contact-mob">contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="modal-container" id="modal">
+        <div class="modal">
+            <p class="modal__title">We would like to help you</p>
+            <svg id="modal-close" class="modal__close" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 7L25 25" stroke="#EC6F5D" stroke-width="2"/>
+                <path d="M25 7L7 25" stroke="#EC6F5D" stroke-width="2"/>
+            </svg>
+            <form action="" method="post">
+                <input name="Name" class="modal__input" placeholder="Name" type="text">
+                <textarea name="Message" id="" class="modal__textarea" rows="1" placeholder="Message"></textarea>
+                <h3 class="modal__question">How to answer you?</h3>
+                <input class="modal__input" type="tel" name="phone" id="" placeholder="Phone number">
+                <input class="modal__input" type="email" placeholder="Email">
+                <input class="modal__button" type="submit" value="Send message">
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

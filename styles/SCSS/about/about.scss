@@ -1,0 +1,163 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../../fonts/Montserrat-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../../fonts/Montserrat-Bold.ttf");
+    font-weight: 700;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@import "../mixins.scss";
+@import "../variables.scss";
+@import "header";
+@import "footer";
+
+.intro {
+    justify-content: center;
+    padding: 60px 0;
+}
+
+.intro-info {
+    width: 942px;
+    margin-right: 30px;
+}
+
+.intro__title {
+    @include Hero;
+}
+
+.intro__text {
+    @include Introduction(#000);
+    margin-top: 25px;
+}
+
+.advantages {
+    border-left: 4px solid $grey-separator;
+    padding-left: 30px;
+    width: 388px;
+}
+
+.advantages-card:not(:first-of-type) {
+    margin-top: 30px;
+}
+
+.advantages-card__img {
+    vertical-align: middle;
+    width: 32px;
+}
+
+.advantages-card__numb {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    vertical-align: middle;
+}
+
+.advantages-card__text {
+    @include Link($main-regular);
+    margin-top: 5px;
+}
+
+.team {
+    justify-content: center;
+    align-items: center;
+}
+
+.team-img {
+    width: 100%;
+}
+
+.team-title {
+    position: absolute;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 117px;
+    letter-spacing: 63px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    opacity: 0.8;
+    text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
+}
+
+.more {
+    padding: 60px 0;
+    justify-content: center
+}
+
+.more__title {
+    @include Hero;
+    width: 362px;
+}
+
+.more__text {
+    @include Introduction(#000);
+    width: 938px;
+    margin-right: 60px;
+
+    &:nth-child(2) {
+        margin: 25px 0;
+    }
+}
+
+.achievements {
+    background-color: $grey-bg;
+    text-align: center;
+    padding: 30px 0
+}
+
+.achievements-cards {
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.achievements-card {
+    width: 370px;
+    height: 110px;
+    background: #fff;
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+
+    & a {
+        display: block
+    }
+}
+
+.achievements__title {
+    @include H3-caps($main-regular);
+}
+
+.achievements-pointers {
+    margin: 0 auto;
+    text-align: center;
+    width: 78px;
+    justify-content: space-between;
+}
+
+.achievements-pointers__pointer {
+    cursor: pointer;
+
+    &:hover circle {
+        opacity: 0.6;
+    }
+
+    &.pointer-active circle {
+        opacity: 1;
+    }
+}    
+
+@import "../modal.scss";
+@import "about-adaptation";
