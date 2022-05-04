@@ -429,7 +429,8 @@ a {
   font-size: 16px;
   line-height: 20px;
   color: #fff;
-  cursor: pointer; }
+  cursor: pointer;
+  border: none; }
 
 #contact, #contact-mob {
   cursor: pointer; }
