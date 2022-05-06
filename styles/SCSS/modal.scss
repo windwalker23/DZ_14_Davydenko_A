@@ -34,6 +34,11 @@
     right: 3%;
     top: 3%;
     cursor: pointer;
+
+    &:active {
+        background-color: $grey-separator;
+        border-radius: 8px;
+    }
 }
 
 .modal__question {

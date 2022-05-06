@@ -328,6 +328,9 @@ a {
   right: 3%;
   top: 3%;
   cursor: pointer; }
+  .modal__close:active {
+    background-color: #E6E6F0;
+    border-radius: 8px; }
 
 .modal__question {
   font-family: 'Montserrat';
@@ -583,5 +586,11 @@ a {
 
   .nav-mob-open {
     margin-top: 45px; } }
+@media (max-width: 374px) {
+  .max-width {
+    max-width: 320px; }
+
+  .publication-card {
+    width: 290px; } }
 
 /*# sourceMappingURL=publications.css.map */

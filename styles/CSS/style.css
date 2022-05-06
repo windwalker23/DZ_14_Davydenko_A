@@ -278,6 +278,9 @@ a {
   right: 3%;
   top: 3%;
   cursor: pointer; }
+  .modal__close:active {
+    background-color: #E6E6F0;
+    border-radius: 8px; }
 
 .modal__question {
   font-family: 'Montserrat';
@@ -982,5 +985,16 @@ a {
 
   .client-card {
     width: 375px; } }
+@media (max-width: 374px) {
+  .max-width {
+    max-width: 320px; }
+
+  .team-card__photo {
+    width: 290px; }
+
+  .recommended-card {
+    width: 290px; }
+    .recommended-card:nth-of-type(3) {
+      width: 290px; } }
 
 /*# sourceMappingURL=style.css.map */

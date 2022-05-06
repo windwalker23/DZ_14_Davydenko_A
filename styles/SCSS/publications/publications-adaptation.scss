@@ -193,3 +193,13 @@
         margin-top: 45px;
     }
 }
+
+@media (max-width: 374px) {
+    .max-width {
+        max-width: 320px;
+    }
+
+    .publication-card {
+        width: 290px;
+    }
+}
