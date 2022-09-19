@@ -15,15 +15,9 @@ const navElement = document.getElementById("nav-mob")
 const body = document.getElementById("body")
 
 showNavButton.addEventListener("click", function () {
-    showNavButton.classList.add("if-nav-mob-open")
-    navElement.classList.add("nav-mob-container-open")
-    body.classList.add("no-overflow")
-})
-
-showNavButton.addEventListener("dblclick", function () {
-    showNavButton.classList.remove("if-nav-mob-open")
-    navElement.classList.remove("nav-mob-container-open")
-    body.classList.remove("no-overflow")
+    showNavButton.classList.toggle("if-nav-mob-open")
+    navElement.classList.toggle("nav-mob-container-open")
+    body.classList.toggle("no-overflow")
 })
 
 const showModalButtonMob = document.getElementById("contact-mob")
